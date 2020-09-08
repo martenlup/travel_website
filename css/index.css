@@ -1,0 +1,325 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+h1{
+  font-size: 2.6rem;
+}
+ul {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 4.3rem;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+h4,h5 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.7rem;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+}
+button {
+  padding: 0.7rem 3rem;
+  border-radius: 10px;
+  background: #4c6e97;
+  border: none;
+  margin-top: 5rem;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+ /* transition: font-size 0.2s ease-in-out; */
+  animation: buttonAnimation 1s infinite alternate ease;
+}
+button:hover {
+  background: #27394e;
+}
+/*Nav Section with HERO */
+
+.main-head {
+  background-color: #131c27;
+  color: white;
+  position: sticky;
+  top: 0%;
+  z-index: 4;
+
+}
+nav {
+  min-height:2vh;
+  padding: 2rem;
+  width:90%;
+  margin: auto;
+  display: flex;
+  align-items:center;
+  flex-wrap:wrap;
+  
+
+
+}
+nav ul {
+  display:flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  text-decoration: underline;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: pattaya;
+  font-weight: 400;
+ }
+
+ .hero {
+   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),url("../img/landing-page.jpg");
+   height: 90vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color:white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .hero h1 h2 h3 {
+   text-align:center;
+   padding: 2rem;
+ }
+ 
+/* Locations Section */
+ #locations {
+   min-height:100vh;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),url("../img/new-york-page.png");
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   position: relative;
+   overflow: hidden;
+ }
+ .locations-head{
+   width:90%;
+   margin: auto;
+ }
+ .locations-head h2 {
+   padding: 1rem 0rem;
+   text-decoration: underline;
+   text-decoration-thickness: 0.5rem;
+
+ }
+.locations-head h3 {
+  padding: 2rem 0rem;
+  background: linear-gradient(#131c27, #663b34);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  
+}
+.moving-cloud-1{
+  animation: cloudAnimation  4s infinite alternate ease-in-out;
+}
+.moving-cloud-2{
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: cloudAnimation  5s infinite alternate-reverse ease-in-out;
+  
+}
+
+ /* Benefits Section */
+
+.benefits-head {
+   background: #131c27;
+   padding: 3rem;
+   min-height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: white;
+}
+.benefits-head h3 {
+   padding: 1rem;
+}
+.cards img {
+   height: 100px;
+   max-width: 15%;
+   
+}
+.cards {
+  display:flex;
+  width: 90%;
+  margin: auto;
+  min-height:70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1 1 25rem;
+  min-height: 25vh;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.card h4,p {
+  padding: 1rem;
+}
+.card-icon {
+  background: #27394e;
+}
+
+/* Contact Section */
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),url("../img/contact-mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper {
+  background: rgba(19,28,39,0.8);
+  width: 60%;
+  color:white;
+  border-radius: 20px;
+}
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+.name-form {
+  text-align: center;
+  padding: 1rem;
+}
+.email-form {
+  text-align: center;
+  padding: 1rem;
+}
+.form-wrapper label {
+  margin: 0rem 2rem;
+}
+.form-wrapper button {
+  width: 100%;
+  padding: 1.2rem;
+  margin-top: 7rem;
+  border-bottom-left-radius: 20px ;
+  border-bottom-right-radius: 20px ;
+}
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
+
+
+/* Footer */
+
+#footer {
+  background: rgba(19,28,39,1);
+  color: white;
+}
+.footer-wrapper {
+ 
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+footer h5 {
+  flex: 1 1 40rem;
+  font-family: 'pattaya';
+  font-weight: 400;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* MEDIA QUERIES */
+
+ @media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+     text-align: center;
+   }
+   .hero {
+     text-align:center;
+   }
+   #l
+   #logo {
+     padding:1rem;
+   }
+   .cloud {
+    height: 100rem;
+    opacity: 1;
+    pointer-events: none;
+   }
+   .moving-cloud-1{
+     z-index: -1;
+  }
+  .moving-cloud-2{
+    z-index: -2;
+   }´
+   .locations-head h2 {
+     text-align: center;
+   }
+   .locations-head h3 {
+     background: rgba(19,28,39,0.6);
+     -webkit-text-fill-color: white;
+     text-align: center;
+   }
+   .footer-wrapper {
+     flex-wrap: wrap;
+   }
+   footer {
+     text-align: center;
+   }
+   .form-wrapper {
+     width:100%;
+   }
+   .footer h5 {
+     padding-bottom: 3rem; 
+   }
+ }
+
+   /* Animations */
+@keyframes buttonAnimation {
+  from {background:silver;}
+  to {background:steelblue;}
+} 
+@keyframes cloudAnimation {
+  from {transform: translate(10%, -10%);}
+  to {transform: translate(0%, 0%)}
+
+}
